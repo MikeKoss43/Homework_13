@@ -1,0 +1,371 @@
+@import 'null.css';
+
+
+@import url("https://fonts.googleapis.com/css?family=Anton:regular");
+
+body {
+	background: url('../image/Kyiv.jpg') 0 0/100% 100% no-repeat fixed;
+   
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.car__container {
+	position: relative;
+	top: 1800px;
+	right: -1500px;
+	animation-name: go-car;
+	animation-duration: 20s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	
+}
+
+.car__container:hover {
+   animation-play-state: paused;
+}
+
+.wheel:hover {
+	animation-play-state: paused;
+}
+
+
+
+@keyframes go-car {
+	0%{
+transform: translate(0,0);
+	}
+
+	100%{
+transform: translate(-300%, 0%);
+	}
+}
+
+.roof__container {
+	background-color: rgb(40, 40, 226);
+	width: 750px;
+	height: 200px;
+	border-radius: 30% 35% 10% 10% / 85% 76% 0% 0% ;
+	border-top: 3px solid silver;
+	z-index: 0;
+	box-shadow: 0px 12px 25px 1px rgba(0,0,0,0.57) inset;
+	position: relative;
+	left: 500px;
+	top: 5px;
+
+}
+
+.container__window-one {
+	background: url(../image/Jonson.png) 0 -50px /auto no-repeat;
+	width: 300px;
+	height: 170px;
+	display: inline-block;
+	border-radius: 58% 0% 100% 0% / 100% 100% 0% 0% ;
+	position: relative;
+	top: -8px;
+	left: 10px;
+	border: 5px solid silver;
+}
+
+.container__item {
+	background-color: rgba(18, 16, 16, 0.768);
+	width: 300px;
+	height: 170px;
+	/*display: inline-block;*/
+	border-radius: 58% 0% 100% 0% / 100% 100% 0% 0% ;
+	position: relative;
+	top: -5px;
+	left: -5px;
+	border: 5px solid silver;
+	transition: all 3s ease 0.1s;
+	z-index: 10;
+}
+
+.container__item:hover{
+	transform: translate(0%, 100%);
+	z-index: 0;
+}
+
+.container__window-two {
+	background-color:rgb(56, 51, 51);
+	width: 350px;
+	height: 170px;
+	display: inline-block;
+	border-radius: 6% 100% 14% 0% / 3% 98% 22% 0%   ;
+	position: relative;
+	top: -5px;
+	left: 35px;
+	border: 5px solid silver;
+}
+
+a {
+	color: red;
+	font-size: 60px;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	text-align: center;
+}
+
+.container__item-two {
+	background-color:rgb(56, 51, 51);
+	width: 350px;
+	height: 170px;
+	display: inline-block;
+	border-radius: 6% 100% 14% 0% / 3% 98% 22% 0%   ;
+	position: relative;
+	top: -3px;
+	left: -5px;
+	border: 5px solid silver;
+	transition: all 3s ease 0.1s;
+	
+}
+
+.container__item-two:hover {
+   transform: translate(0, 100%);
+}
+
+.container__partition {
+	background-color: silver;
+	height: 200px;
+	width: 10px;
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	
+}
+
+.vertical {
+	background-color: rgba(192, 192, 192, 0.733);
+	height: 160px;
+	width: 5px;
+	position: absolute;
+	left: 100px;
+	top: 10px;
+}
+
+.body {
+	position: relative;
+}
+
+.body__detail-one {
+	background-color: yellow;
+	width: 1600px;
+	height: 200px;
+	position: relative;
+	left: 0px;
+	box-shadow: 0px 12px 25px 1px rgba(0,0,0,0.57) inset;
+	z-index: 10;
+	border-radius:  29% 29% 7% 3% / 100% 85% 20% 0%   ;
+}
+
+.body__detail-two {
+	background-color: yellow;
+	will-change: 1600px;
+	height: 230px;
+	position: relative;
+	top: 20px;
+	border-radius: 29% 29% 7% 3% / 100% 85% 20% 34%  ;
+	box-shadow: 12px -11px 36px -7px rgba(0,0,0,0.76) inset;
+}
+
+
+
+.door-one {
+	background-color: yellow;
+	width: 320px;
+	height: 200px;
+	border: 3px solid rgb(130, 125, 125);
+	display: inline-block;
+	position: absolute;
+	left: 508px;
+	border-top: none;
+	box-shadow: 0px -12px 18px -12px rgba(0,0,0,0.76) inset;
+}
+
+p {
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Anton';
+	color: rgb(83, 83, 239);
+}
+
+.vert-line {
+	width: 10px;
+	height: 230px;
+	background-color: silver;
+	display: inline-block;
+	position: absolute;
+	left: 834px;
+	bottom: 25px;
+}
+
+.door-two {
+	background-color: yellow;
+	width: 350px;
+	height: 200px;
+	border: 3px solid rgb(130, 125, 125);
+	display: inline-block;
+	position: absolute;
+	left: 843px;
+	border-top: none;
+	box-shadow: 0px 18px 17px -3px rgba(0,0,0,0.4) inset;
+	box-shadow: 0px -12px 18px -12px rgba(0,0,0,0.76) inset;
+
+}
+
+.handle {
+	width: 50px;
+	height: 15px;
+	position: absolute;
+	background-color: silver;
+	top: 10px;
+	left: 260px;
+	border-radius: 15px;
+}
+
+.light {
+	width: 15px;
+	height: 60px;
+	background-color: silver;
+	border-radius: 100% 0% 0% 100% / 50% 50% 50% 50% ;
+	position: absolute;
+	top: 135px;
+	left: -5px;
+}
+
+.arch-front {
+	display: inline-block;
+	background-color: rgb(71, 66, 66);
+	width: 250px;
+	height: 140px;
+	border-radius: 50% 50% 0% 50% / 100% 100% 0% 0% ;
+	position: absolute;
+	top: 90px;
+	left: 100px;
+	z-index: 3;
+	
+}
+
+.arch-two {
+	display: inline-block;
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border-radius: 50% 50% 0% 50% / 100% 100% 0% 0% ;
+	background-color: yellow;
+	border: 1px solid silver ;
+	top: 77px;
+	left: 1120px;
+	z-index: 1;
+	border-bottom: none;
+	box-shadow: 12px -11px 36px -7px rgba(0,0,0,0.76) inset;
+}
+
+.arch-back {
+	display: inline-block;
+	background-color: rgb(71, 66, 66);
+	width: 230px;
+	height: 125px;
+	border-radius: 50% 50% 0% 50% / 100% 100% 0% 0% ;
+	position: absolute;
+	top: 26px;
+	left: 30px;
+	z-index: 10;
+}
+
+.front-bumper {
+   position: absolute;
+	display: inline-block; 
+   background-color: silver;
+	width: 120px;
+	height: 40px;
+	border-radius: 15% 100% 0% 15% / 50% 0% 0% 50% ;
+	top: 190px;
+   left: -15px;
+
+	   
+}
+.back-bumper {
+	position: absolute;
+	display: inline-block; 
+   background-color: silver;
+	width: 120px;
+	height: 40px;
+	border-radius: 0% 15% 15% 0% / 50% 50% 50% 50% ;
+	top: 170px;
+	left: 1500px;
+}
+
+.tire-one {
+	background-color: white;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 14px;
+	box-shadow: 0px 0px 50px 30px rgba(32,38,33,1) inset;
+}
+
+.tire-two {
+   background-color: white;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: 5px;	
+	box-shadow: 0px 0px 50px 30px rgba(32,38,33,1) inset;
+}
+
+.wheel {
+	background-color: rgba(130, 128, 128, 0.359);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	border: 10px solid rgba(32, 32, 32, 0.434);
+   animation-name: wheel;
+   animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+@keyframes wheel {
+  0%{
+	transform: rotate(0deg);
+
+  }
+  100%{
+   transform: rotate(-360deg);
+  }
+
+}
+
+.pin {
+	position: absolute;
+	background: url('../image/jaguar.png') 0 0/ 100px 80px no-repeat;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	
+}
+
+
+
+
+
+
+
+
+
